@@ -1,0 +1,155 @@
+@import "../../../dev/styles/01-settings/_settings";
+
+/////////////////////////////////////////////////////////////////////////////////
+// Design system styles
+// This stylesheet is only meant to be included in fractal,
+// since it only contains demo-styles used in fractal.
+/////////////////////////////////////////////////////////////////////////////////
+
+.demo-wrapper {
+    padding: 2rem;
+}
+
+.demo-wrapper__section {
+    padding: 1rem 0;
+    border-bottom: 1px solid $color_black;
+}
+
+.demo-wrapped-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0;
+    max-width: 960px;
+}
+
+.demo-color {
+    margin-bottom: 3rem;
+}
+
+.demo-color__example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.3125em;
+    height: 7.5em;
+    transition: transform 250ms;
+    margin-bottom: 1rem;
+    margin-right: 20px;
+}
+
+.demo-table {
+    width: 100%;
+    max-width: 50rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+
+    thead tr {
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-align: left;
+        line-height: 1.25;
+        padding: 1rem 3rem 1rem 0;
+        border-bottom: 2px solid $color_brand1;
+        white-space: nowrap;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid $color_brand2;
+    }
+
+    tbody tr td {
+        font-size: 0.875rem;
+        padding: 1rem 3rem 1rem 0;
+        line-height: 1.25;
+    }
+}
+
+
+.demo-spacing {
+    border: 1px solid #000;
+    background-color: $color_brand1;
+}
+
+.demo-spacing-wrapper {
+    background-color: $color_utility5;
+    display: inline-flex;
+
+    .demo-spacing {
+        background-color: $color_white;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.demo-spacing-size-xs {
+    width: $spacing-xs;
+    height: $spacing-xs;
+}
+
+.demo-spacing-size-s {
+    width: $spacing-s;
+    height: $spacing-s;
+}
+
+.demo-spacing-size-m {
+    width: $spacing-m;
+    height: $spacing-m;
+}
+
+.demo-spacing-size-l {
+    width: $spacing-l;
+    height: $spacing-l;
+}
+
+.demo-spacing-size-xl {
+    width: $spacing-xl;
+    height: $spacing-xl;
+}
+
+.demo-spacing-size-xxl {
+    width: $spacing-xxl;
+    height: $spacing-xxl;
+}
+
+.demo-container-1 {
+    width: 300px;
+}
+
+.demo-tooltip {
+    margin: 3.5rem;
+}
+
+.demo-blockquote {
+    .c-quote {
+        margin: 0 auto;
+        max-width: 650px;
+    }
+}
+
+.demo-icon-wrapper {
+    background-color: white;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        width: 120px;
+        height: 120px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        border: 1px solid #eaebec;
+        font-family: monospace;
+        padding: 20px 12px 12px;
+
+        label {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+<div class="demo-wrapper demo-icon-wrapper">
+  <h1>Icons</h1>
+
+  <h3>Icon sizes</h3>
+  <p>These are the standard icon-sizes.</p>
+  <ul class="u-reset-ul u-spacing-stack-xl">
+    <li>
+      {{> @icon id="house-1" size="xs" }}
+      <label>.u-icon--xs</label>
+    </li>
+    <li>
+      {{> @icon id="house-1" size="s" }}
+      <label>.u-icon--s</label>
+    </li>
+    <li>
+      {{> @icon id="house-1" size="m" }}
+      <label>.u-icon--m</label>
+    </li>
+    <li>
+      {{> @icon id="house-1" size="l" }}
+      <label>.u-icon--l</label>
+    </li>
+    <li>
+      {{> @icon id="house-1" size="xl" }}
+      <label>.u-icon--xl</label>
+    </li>
+    <li>
+      {{> @icon id="house-1" size="xxl" }}
+      <label>.u-icon--xxl</label>
+    </li>
+  </ul>
+
+  <h3>Icons</h3>
+  <p>The available icons.</p>
+  <ul class="u-reset-ul u-spacing-stack-xl">
+    {{#each items}}
+    <li>
+      {{> @icon id=icon size="xl" }}
+      <label>{{icon}}</label>
+    </li>
+    {{/each}}
+  </ul>
+
+  <h3>Usage</h3>
+  <p><strong>For developers: </strong>In handlebars-files you can use this when you need an icon: </p>
+  <code>\{{> @icon id="house-1" size="xs" }}</code>
+</div>

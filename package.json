@@ -1,0 +1,26 @@
+{
+  "name": "north",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "install-all-packages": "npm install && cd ./design-system && npm install && cd ../webcomponents && npm install",
+    "start": "concurrently \"npm run design-system\" \"cd dev/webcomponents && npm start --es5\"",
+    "design-system": "cd design-system && npm start",
+    "build": "npm run install-all-packages && npm run build:webcomponents && npm run build:fractal",
+    "build:webcomponents": "cd webcomponents && npm run build",
+    "build:fractal": "cd design-system && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creunaDK/north/issues"
+  },
+  "homepage": "https://github.com/creunaDK/north#readme",
+  "dependencies": {
+    "@frctl/fractal": "^1.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "normalize.css": "^8.0.1"
+  }
+}

@@ -1,0 +1,47 @@
+/* ==========================================================================
+   #GLOBAL
+   ========================================================================== */
+
+$prefix: '.nds_' !default;
+
+
+
+/* #BASE
+   ========================================================================== */
+
+/* Font */
+
+$base-font-size:                 1rem !default;
+$base-line-height:               1.5 !default;
+
+//$base-spacing-unit-factor-large: 1.5;
+$base-spacing-unit-factor-small: 0.5 !default;
+$base-spacing-unit-factor-xs:    0.25 !default;
+$base-spacing-unit:              $base-line-height + rem !default;
+//$base-spacing-unit-large:        $base-line-height * $base-spacing-unit-factor-large + rem;
+$base-spacing-unit-small:        $base-line-height * $base-spacing-unit-factor-small + rem !default;
+$base-spacing-unit-xs:           $base-line-height * $base-spacing-unit-factor-xs + rem !default;
+
+/* Shadows */
+$base-box-shadow:                0 0 1em rgba(34, 34, 34, 0.125) !default;
+$base-box-shadow-inset:          0 0 0.25em rgba(34, 34, 34, 0.125) inset !default;
+$base-box-shadow-error:          0 0 0.5em rgba(255, 65, 54, 0.25) !default;
+$base-box-shadow-highlight:      0 0 0.5em rgba(0, 169, 151, 0.25) !default;
+
+/* Borders */
+$base-border-width-small:        2px !default;
+
+/* Transitions */
+$base-transition-duration:      .18s !default;
+$base-transition-easing:        ease-in-out !default;
+
+
+/* Z-index  - increments by 1*/
+$z-index__tooltip: 1 !default;
+$z-index__header: 2 !default;
+$z-index__lowest: 1 !default;
+$z-index__negative: -1 !default;
+
+//Mobile - burger menu
+$mobile-nav-toggle-button-width: 25px !default;
+$mobile-nav-toggle-button-border-height: 2px !default;

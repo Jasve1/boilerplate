@@ -1,0 +1,54 @@
+/* ==========================================================================
+   #SPACING
+   ========================================================================== */
+
+/*
+    Spacing in design systems:
+
+    https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
+*/
+
+
+/* Spacing variables */
+
+$spacing-xs:                    0.25rem !default;
+$spacing-s:                     0.5rem !default;
+$spacing-m:                     1rem !default;
+$spacing-l:                     1.5rem !default;
+$spacing-xl:                    2.5rem !default;
+$spacing-xxl:                   4rem !default;
+
+
+
+/* Stacking */
+
+$spacing-stack-xs:              0 0 $spacing-xs 0 !default;
+$spacing-stack-s:               0 0 $spacing-s 0 !default;
+$spacing-stack-m:               0 0 $spacing-m 0 !default;
+$spacing-stack-l:               0 0 $spacing-l 0 !default;
+$spacing-stack-xl:              0 0 $spacing-xl 0 !default;
+$spacing-stack-xxl:             0 0 $spacing-xxl 0 !default;
+
+
+
+
+/* Inline */
+
+$spacing-inline-xs:             0 $spacing-xs 0 0 !default;
+$spacing-inline-s:              0 $spacing-s 0 0 !default;
+$spacing-inline-m:              0 $spacing-m 0 0 !default;
+$spacing-inline-l:              0 $spacing-l 0 0 !default;
+$spacing-inline-xl:             0 $spacing-xl 0 0 !default;
+$spacing-inline-xxl:            0 $spacing-xxl 0 0 !default;
+
+
+
+
+/* Inset */
+
+$spacing-inset-xs:              $spacing-xs $spacing-xs $spacing-xs $spacing-xs !default;
+$spacing-inset-s:               $spacing-s $spacing-s $spacing-s $spacing-s $spacing-s !default;
+$spacing-inset-m:               $spacing-m $spacing-m $spacing-m $spacing-m !default;
+$spacing-inset-l:               $spacing-l $spacing-l $spacing-l $spacing-l !default;
+$spacing-inset-xl:              $spacing-xl $spacing-xl $spacing-xl $spacing-xl !default;
+$spacing-inset-xxl:             $spacing-xxl $spacing-xxl $spacing-xxl $spacing-xxl !default;

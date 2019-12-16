@@ -1,0 +1,28 @@
+<div class="demo-wrapper">
+    <h1 class="u-h1">Elevation</h1>
+
+    <div class="demo-wrapped-list">
+        {{#each items}}
+            <div class="{{cssClass}}" style="width:6rem;height:6rem;margin-right: 3rem;margin-bottom: 5rem;display:flex;justify-content:center;align-items:center;">{{layerName}}</div>
+        {{/each}}
+    </div>
+
+    <table class="demo-table">
+        <thead>
+            <tr>
+                <th>Layer name</th>
+                <th>Elevation</th>
+                <th>Box-shadow</th>
+            </tr>
+        </thead>
+        <tbody>
+        {{#each items}}
+            <tr>
+                <td><strong>{{layerName}}</strong></td>
+                <td>{{elevation}}</td>
+                <td>{{boxShadow}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>

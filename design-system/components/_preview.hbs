@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>North Design System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="North Design System">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://creuna-north.netlify.com">
+    <meta property="og:title" content="North Design System">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://creuna-north.netlify.com">
+    <meta property="twitter:title" content="North Design System">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+  {{#ifCond _config.env '!==' 'development'}}
+    <link rel="stylesheet" href="{{path '/main.css' }}">
+  {{/ifCond}}
+
+  <!-- Polyfills needed (plus others) for Plyr in IE11 https://github.com/sampotts/plyr/issues/937#issuecomment-389041306-->
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes%2Ces6%2CCustomEvent%2CObject.entries%2CObject.values%2CURL%2CNodeList.prototype.forEach"></script>
+
+  <script type="module" src="{{path '/assets/scripts/nds/nds.esm.js' }}"></script>
+  <script nomodule="" src="{{path '/assets/scripts/nds/nds.js' }}"></script>
+
+  <script type="text/javascript" src="{{path '/main.js' }}"></script>
+</head>
+<body>
+  {{{ yield }}}
+</body>
+</html>

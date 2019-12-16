@@ -1,0 +1,18 @@
+<div class="demo-wrapper">
+    <h1 class="u-h1">Colors</h1>
+
+    <br>
+
+    {{#each color_categories}}
+        <h2>{{categoryName}}</h2>
+        <div class="demo-wrapped-list">
+            {{#each colors}}
+            <div class="demo-color">
+                <div class="demo-color__example" style="background-color: {{value}};"></div>
+                <p>{{key}}</p>
+                <p>{{value}}</p>
+            </div>
+            {{/each}}
+        </div>
+    {{/each}}
+</div>

@@ -1,0 +1,29 @@
+/* ==========================================================================
+   #FONTS
+   ========================================================================== */
+
+/* Font */
+
+$brand-font:            -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !default;
+$brand-font-secondary:  Georgia, serif !default;
+
+/* Family */
+
+$font:                  $brand-font !default;
+$font-secondary:        $brand-font-secondary !default;
+
+/* Size */
+
+$font-size-h1:          2rem !default;     /* 32 / 16 */
+$font-size-h2:          1.75rem !default;  /* 28 / 16 */
+$font-size-h3:          1.5rem !default;   /* 24 / 16 */
+$font-size-h4:          1.25rem !default;  /* 20 / 16 */
+$font-size-h5:          1.125rem !default; /* 18 / 16 */
+$font-size-h6:          1rem !default;     /* 16 / 16 */
+
+$font-size-caption:     0.75rem !default;
+
+/* Weight */
+
+$weight-bold:           700 !default;
+$weight-normal:         400 !default;

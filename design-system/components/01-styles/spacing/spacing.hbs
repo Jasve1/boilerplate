@@ -1,0 +1,134 @@
+<div class="demo-wrapper">
+    <h1 class="u-h1">Spacing scale</h1>
+    <p>The spacing scale consists of the following spacing variables.</p>
+    <table class="demo-table">
+        <thead>
+            <tr>
+                <th>Variable name</th>
+                <th>rem</th>
+                <th>px</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+        {{#each items}}
+            <tr>
+                <td><strong>{{variableName}}</strong></td>
+                <td>{{rem}}</td>
+                <td>{{px}}</td>
+                <td>
+                    <div class="demo-spacing {{cssClass}}"></div>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+
+    <h1>Spacing utilities</h1>
+
+    <p><label>Developer note:</label> Spacing utilties are useful when you need to add some spacing, but don't want to add an entire new component that only has spacing.<br>
+        Simply just add one of the <code>.u-spacing-*</code> CSS-classes to your HTML.
+    </p>
+    <p>The following spacing concepts (stack, inline, inset) are inspired from this article: <a href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62">Space in design systems</a></p>
+    <br>
+    <br>
+
+    <h3>Spacing - stack</h3>
+    <p>Spacing is marked in purple.</p>
+
+    <table class="demo-table">
+        <thead>
+        <tr>
+            <th>Variable name</th>
+            <th>Utility class</th>
+            <th>rem</th>
+            <th>px</th>
+            <th>Example</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each stack}}
+            <tr>
+                <td><strong>{{variableName}}</strong></td>
+                <td><code>{{cssClass}}</code></td>
+                <td>{{rem}}</td>
+                <td>{{px}}</td>
+                <td>
+                    <div class="demo-spacing-wrapper">
+                        <div class="demo-spacing {{cssClass}}"></div>
+                    </div>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<div class="demo-wrapper">
+    <h3>Spacing - inline</h3>
+    <p>Spacing is marked in purple.</p>
+
+    <table class="demo-table">
+        <thead>
+        <tr>
+            <th>Variable name</th>
+            <th>Utility class</th>
+            <th>rem</th>
+            <th>px</th>
+            <th>Example</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each inline}}
+            <tr>
+                <td><strong>{{variableName}}</strong></td>
+                <td><code>{{cssClass}}</code></td>
+                <td>{{rem}}</td>
+                <td>{{px}}</td>
+                <td>
+                    <div class="demo-spacing-wrapper">
+                        <div class="demo-spacing {{cssClass}}"></div>
+                    </div>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<div class="demo-wrapper">
+    <h3>Spacing - inset</h3>
+    <p>Spacing is marked in purple.</p>
+
+    <table class="demo-table">
+        <thead>
+        <tr>
+            <th>Variable name</th>
+            <th>Utility class</th>
+            <th>rem</th>
+            <th>px</th>
+            <th>Example</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each inset}}
+            <tr>
+                <td><strong>{{variableName}}</strong></td>
+                <td><code>{{cssClass}}</code></td>
+                <td>{{rem}}</td>
+                <td>{{px}}</td>
+                <td>
+                    <div class="demo-spacing-wrapper">
+                        <div class="{{cssClass}}">
+                            <div class="demo-spacing"></div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
