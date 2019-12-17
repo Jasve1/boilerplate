@@ -2,8 +2,6 @@
 title: Welcome
 ---
 
-![North Design System](/assets/images/north_promotion.jpg)
-
 
 Welcome to (your-project) Design System.
 
